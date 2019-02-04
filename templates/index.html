@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Graph plotter</title>
+	<style>
+		*
+		{
+			margin:0;
+			padding:0; 
+		}
+		body
+		{
+			font-family: sans-serif;
+		}
+		.header
+		{
+			background-color: skyblue;
+			border-radius: 500px;
+			margin: 20px auto;
+			text-align: center;
+		}
+		body form h3
+		{
+			margin: 20px auto;
+			text-align: center;
+		}
+		body form input
+		{
+			width: 200px;
+			display: block;
+			margin:  3px auto;
+			padding: 8px;
+		}
+		form .list
+		{
+			margin: 10px auto;
+			text-align: center;
+		}
+		form .list li
+		{
+			margin: 10px 0px;
+		}
+		
+	</style>
+</head>
+<body>
+	<h1 class="header">Graph Plotter</h1>
+	<form action="/" method="post">
+		<h3>Select the type of graph</h3>
+		<ul class="list">
+			<li>Line</li>
+			<li>Bar Graph</li>
+			<li>Pie Chart</li>
+			<li>Histogram</li>
+			<li>Scatter</li>
+		</ul>
+		<input type="text" name="kind" placeholder="input a,b,c,d,e">
+		<h3>Input points on x-axis</h3>
+		<input type="text" name="Xpoints" placeholder="input x points">
+		<h3>Input points on y-axis</h3>
+		<input type="text" name="Ypoints" placeholder="input y points">
+		<input type="submit" name="submit" placeholder="input y points" style="margin-top: 25px;">
+	</form>
+
+</body>
+</html>
